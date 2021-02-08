@@ -11,8 +11,10 @@
 
   <body class="container">
     <ul>
-      <li>Signup</li>
-      <li>Login</li>
+      <li><%= link_to"トップページ", root_path %></li>
+      <li><%= link_to"ユーザー一覧",users_path %></li>
+      <li><%= link_to "サインアップ", new_user_path %></li>
+      <li>ログイン</li>
     </ul>
     <%= render "layouts/flash_messages" %>
     
