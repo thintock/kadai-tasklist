@@ -1,8 +1,0 @@
-<h1>ユーザー一覧</h1>
-<% if @users.any? %>
-  <ul>
-    <% @users.each do |user| %>
-    <li><%= user.name %> &gt; <%= link_to '詳細を見る', user_path(user) %></li>
-    <% end %>
-  </ul>
-<% end %>
