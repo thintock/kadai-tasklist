@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
-  root to: "toppages#index"
+  root to: "tasks#index"
   
   resources :sessions, only: [:new, :create, :destroy]
   resources :users, only: [:index, :show, :new, :create]
+#  resources :users, only: [:new, :create]
   resources :tasks
 end

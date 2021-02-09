@@ -1,7 +1,0 @@
-<h1>Tasklistアプリ</h1>
-<% if logged_in? %>
-  <p>ログイン完了ユーザー： <%= current_user.name %></p>
-<% else %>
-  <h1>ようこそタスクアプリへ</h1>
-  <%= link_to "Sign up now!", new_user_path %>
-<% end %>
